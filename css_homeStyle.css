@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
+
+html {
+	scroll-behavior: smooth;
+}
 
 body{
 	display: flex;
@@ -8,22 +13,33 @@ body{
 	font-family: 'Poppins', sans-serif;
 	margin: 0;
 	width: 100vw;
+	background-color: #F0F7F4;
+}
+
+h1{
+	color: #32292F;
+	font-family: 'Sedgwick Ave Display';
+	font-size: 40pt;
+}
+
+h2 {
+	margin-top: -2%;
 }
 
 h3{
 	color: white;
-	background-color: blue;
+	background-color: #70ABAF;
 	width: inherit;
+	padding-left: 2%;
 }
 
 header {
-	margin: 2%;
 	padding-top: 30px;
-	background-color: blue;
+	background-color: #70ABAF;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	width: 96%;
+	width: 100%;
 }
 
 header a{
@@ -32,7 +48,8 @@ header a{
 }
 
 #img_profile{
-	width: 30%;
+	width: 15%;
+	margin-bottom: -2%;
 }
 
 .menu_links {
@@ -45,6 +62,35 @@ header a{
 
 li{
 	margin: 10px;
+}
+
+main{
+	width: 60%;
+}
+
+/*Configurações para dispositivos moveis*/
+@media (max-width: 1000px) {
+	main{
+		width: 100%;
+	}
+	#img_profile{
+		width: 50%;
+	}
+	h1{
+		font-size: 40pt;
+	}
+	
+	li, h2 {
+		font-size: 30pt;
+	}
+	
+	footer h3, p {
+		font-size: 30pt;
+	}
+	
+	footer p{
+		margin-top: -2%;
+	}
 }
 
 .certificados{
@@ -61,7 +107,7 @@ li{
 }
 
 footer {
-	background-color: blue;
+	background-color: #70ABAF;
 	color: white;
 	margin: 2%;
 	width: 96%;
@@ -70,4 +116,8 @@ footer {
 	align-content: center;
 	justify-content: center;
 	text-align: center;
+}
+
+footer p{
+	margin-top: -1%;
 }
